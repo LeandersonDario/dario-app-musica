@@ -1,8 +1,7 @@
 Diferença entre bibliotecas, framework e Middleware
  . Bibliotecas: È um tecnologia para resolver um determinado problema.
-   .Ex: React ( depende de outros biblioteas como axios, redux(Gerenciamento de states))  
- 
-   .Ex: Angular que já tem todas os conceitos embutidos dentro dele(Rotas, visualizações, gerenciamentos de states)
+   .Ex: React ( depende de outros biblioteas como axios, redux(Gerenciamento de states))   
+   
  . Middleware: È um tecnologoa para alterar a forma como framework funciona.
 
  . Framework: Framework é um conjunto de ferramentas (código, bibliotecas) criadas POR desenvolvedores PARA (outros) desenvolvedores criarem aplicações.
@@ -26,7 +25,7 @@ Padrão MVC
 
 Model: È o modelo da aplicação que faz parte da lógica de dominio, ou seja, ele vai encapsula e gerenciar os dados da aplicação.
 
-View: São os componentes responsável pela exibição da interface com usuário, ouseja, é onde vai ficar os dados de visualização da aplicação.
+View: São os componentes responsável pela exibição da interface com usuário, ou seja, é onde vai ficar os dados de visualização da aplicação.
 
 Controle: È responsável pela interação e o tratamento das requisições que chegar de api ou endereço da web, ele que vai ser responsável pelo conjunto de modelo. Ocrestação de bancos de dados 
 
