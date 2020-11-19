@@ -66,4 +66,9 @@ Familias 5xx Error no servidor
 
 
 
+Pacotes Nu-Get utilizados
 
+Microsoft.EntityFrameworkCore 
+Microsoft.EntityFrameworkCore.Design 
+Microsoft.EntityFrameworkCore.Relational 
+Microsoft.EntityFrameworkCore.Sqlite
