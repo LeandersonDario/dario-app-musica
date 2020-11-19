@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MusicApp.API.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,17 @@ namespace MusicApp.API.Controllers
     [ApiController]
     public class AlbumController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetAlguns()
+        private AlbumRepository Repository { get; set; }
+
+        public AlbumController(AlbumRepository repository)
         {
-            return Ok(new
-            {
-                message = "Primeira API criada"
-            });
+            this.Repository = repository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAlbuns()
+        {
+            return Ok(await this.Repository.GetAllAsync());
         }
     }
 }
