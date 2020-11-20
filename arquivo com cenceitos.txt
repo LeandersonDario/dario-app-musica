@@ -41,6 +41,29 @@ As rotas são configuradas de forma centralizada dentro do startus.cs ou utilizan
 
 O atributo route permite que você definir suas rotas no mesmo arquivo aonde está localizado o seu controller
 
+Repository
+
+
+Repositórios são pontes entre dados e operações que estão em domínios diferentes. Um caso comum é o mapeamento de um domínio onde os dados são mal tipados, como um banco de dados ou lista do SharePoint, para um domínio onde os objetos são fortemente tipados, como um modelo de entidade de domínio. 
+
+
+Data Mapper - Responsável por mapear as informações da entidade
+Ex: pasta Mapping com <Nome> + Mapping => NomeMapping 
+
+Query Object - È responsável por armazenar as query dos objeto
+Ex: <Nome>Repository => NomeRepository
+
+TDD -> https://docs.microsoft.com/en-us/previous-versions/aspnet/ff847525(v=vs.100)?redirectedfrom=MSDN
+
+Modelo de projeto
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+
+Referencia: 
+ .https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649690(v=pandp.10)?redirectedfrom=MSDN
+ . https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+
 
 Status code
 
@@ -62,6 +85,10 @@ Familias 5xx Error no servidor
  . 500 - Internal Server Error
  . 502 - Bad Gateway
  . 503 - Service Unavailable
+
+
+
+
 
 
 
