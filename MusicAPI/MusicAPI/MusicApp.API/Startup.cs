@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,7 +37,11 @@ namespace MusicApp.API
                 c.UseSqlite(this.Configuration.GetConnectionString("MusicAppConnection"));
             });
 
+            services.AddAutoMapper(typeof(Startup).Assembly);
+
             services.AddScoped<AlbumRepository>();
+
+            services.AddScoped<UserRepository>();
 
             services.AddSwaggerGen(c =>
             {

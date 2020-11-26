@@ -64,7 +64,6 @@ Referencia:
  . https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 
 
-
 Status code
 
 OS mais utilizados:
@@ -87,8 +86,10 @@ Familias 5xx Error no servidor
  . 503 - Service Unavailable
 
 
-
-
+Propriedade
+Set: Pode setar qualquer valor  em qualquer parte do código
+Readonly: - Só consegue seta valor no construtor da class
+init: Só é setado uma vez o valor da propriedade em qualquer parte do código
 
 
 
@@ -98,3 +99,10 @@ Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.Design 
 Microsoft.EntityFrameworkCore.Relational 
 Microsoft.EntityFrameworkCore.Sqlite
+
+AutoMapper
+
+Comando do Migrations
+dotnet ef migrations add InitialCreate
+dotnet ef database add createuserAnduserFavorite
+dotnet ef database update --verbose

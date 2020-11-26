@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace MusicApp.API.Model
+namespace MusicApp.API.ViewModel.Request
 {
-    public class Music
+    public class MusicRequest
     {
-        public Guid Id { get; set; }
-
+        [Required]
         public String Name { get; set; }
 
+        [Required]
         public int Duration { get; set; }
-
-        [JsonIgnore]
-        public Album Album { get; set; }
-
     }
-
 }
