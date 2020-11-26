@@ -85,6 +85,16 @@ Familias 5xx Error no servidor
  . 502 - Bad Gateway
  . 503 - Service Unavailable
 
+Outros Status code existente
+Familias 1xx informativo
+
+Familias 3xx Redirecionamentos
+
+
+
+
+
+
 
 Propriedade
 Set: Pode setar qualquer valor  em qualquer parte do código
